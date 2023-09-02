@@ -1,0 +1,767 @@
+/* fuentes */
+
+  @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@300&display=swap');
+  
+
+
+/* variables */
+
+
+:root{
+    --bg-body : #000345;
+    --primary-color : #000568;
+    --fontSize-title :40px;
+    --fontSize-parrafos : 20px;
+    
+
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Patua One', cursive;
+
+}
+
+p,a,li,td,input,label {
+    font-family: 'Maitree', serif;
+}
+
+
+
+  /* boton */
+.tema-color{
+  position: fixed;
+  right: 0;
+  top: 300px;
+  z-index: 99;
+  background: transparent;
+  
+}
+
+.cont-colores{
+  width: 100px;
+  padding:30px 0;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  right: -100px;
+  transition: 1s;
+  top: -64px;
+  border-radius: 20px;
+
+
+}
+
+.cont-colores button{
+ width: 30px;
+ height: 30px;
+ color: transparent;
+ border-radius: 40px;
+ display: block;
+ margin: 10px auto;
+ 
+}
+
+.cont-colores.active{
+  right: 0;
+
+}
+.open-panel{
+  background:linear-gradient(180deg, #E90066, #5bc0de);
+  color: #fff;
+  padding: 10px 40px;
+  transform: rotate(-90deg);
+  position: relative;
+  right: -45px;
+  transition: 1s;
+  top: -10px;
+  border-radius: 40px;
+}
+.open-panel.active{
+  right: 53px;
+}
+
+.cont-colores button:nth-child(1){
+  background: #5F12C1;
+
+}
+.cont-colores button:nth-child(2){
+  background: #1b5583;
+
+}
+.cont-colores button:nth-child(3){
+  background: #000000;
+
+}
+
+
+
+/* style portafolio */
+body{
+    background: var(--bg-body);
+}
+
+nav.bg-portafolio{
+    background: var(--primary-color);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav.bg-portafolio ul li{
+margin-top: 14px;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: aqua;
+}
+
+nav.bg-portafolio ul li a{
+    color: #fff;
+    position: relative;  
+    font-size: 20px; 
+    margin: 0 12px 
+}
+nav .navbar-brand img{
+width: 70px;
+}
+
+nav.bg-portafolio ul li a::after{
+    width: 20%;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: .4s;
+    }
+
+    nav.bg-portafolio ul li a:hover{
+        color:aqua;
+    }
+
+    #hero img{
+       width: 500px;
+       height: 500px;
+       margin-top: 30%;
+
+        }
+
+    #hero .cont-info{
+        padding-right: 60px;
+        color: #fff;
+    }
+
+    #hero .cont-info h1{
+    margin-top: 20%;
+   
+
+    }
+
+    
+    #hero .cont-info h3{
+        margin-top: 25%;
+
+    }
+
+    #hero .cont-info h4{
+        margin-top: 17%;
+
+    }
+
+    /* conoceme */
+    #sobremi{
+        width: 100%;
+        position: relative ;
+        padding: 40px 0;
+        margin-bottom: 190px;
+    }
+   
+    #sobremi h5{
+        color: #fff;
+        font-size: 20px;
+        font-weight:300;
+    }
+
+
+    #sobremi p{
+        color: #fff;
+        font-size: var(--fontSize-parrafos);
+
+    }
+
+    #sobremi .row{
+        padding-top:70px;
+        
+    }
+
+    #sobremi .card-services{
+    
+    background: linear-gradient(180deg, #5F12C1 33.33%, rgba(18, 108, 193, 0.801) 86.98%);
+    border-radius:4px;
+    position: relative;
+    padding-top:50px;
+    text-align: center;
+    width: 100%;
+    height: 130%;
+    -webkit-box-shadow: 10px 10px 8px 8px rgba(92,26,235,1);
+    -moz-box-shadow: 10px 10px 8px 8px rgba(92,26,235,1);
+    box-shadow: 10px 10px 8px 8px rgba(92,26,235,1);
+    }
+
+    #sobremi .logo2{
+        width:100px;
+        height: 100px;
+        
+    } 
+
+   #sobremi .img2 {
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+   }
+
+   .card-conoceme1{
+    position: relative;
+    margin-bottom: 150px;
+   
+   }
+
+   #conoceme .cono1{
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: 100px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-image: linear-gradient(to right, #f06, #00f) 1;
+    border-image-slice: 1
+   }
+
+   #conoceme .cono1 img{
+    width: 170px;
+    height: 198px;
+    margin-left: 1px;
+  
+   }
+
+
+ #conoceme .foto2{
+    width: 400px;
+    height:  400px;
+    position:absolute;
+    object-fit: cover;
+    margin-right: -0px;
+    margin-top: -10px;
+   }
+
+
+
+   .fotomia {
+    margin-top: 80px;
+    margin-left: -210px;
+    width: 410px;
+    position: absolute;
+    left: 410px;
+    height: 425px;
+    border-top: 20px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-image: linear-gradient(to right, #f06, #00f) 1;
+    border-image-slice: 1
+   }
+   
+   .pensamiento{
+    width: 145%;
+    height: 130%;
+   }
+
+   .idea{ 
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -50px;
+    margin-left: -100px;
+   }
+
+   .texto{
+    position:absolute;
+    top: 110px;
+    left:120px;
+    width: 250px;
+    height: 250px;
+    font-size: 15px;
+   }
+
+   .compu{
+    width: 150px;
+    height: 150px;
+    margin-left: 300px;
+    margin-top: -350px;
+   }
+
+   .textconoceme{
+    margin-right: 100px;
+    font-family: 'Crimson Text', serif;
+    font-size: 15px;
+    color:#fff;
+    text-align: center;
+    margin-top: -50px;
+    
+   }
+
+   .experienciaimg{
+    width: 50px;
+    height:70px;
+   margin-top: 400px;
+   margin-left: 120px;
+   }
+
+   .experienciatext{
+    margin-top: -10px;
+    font-family: 'Crimson Text', serif;
+    font-size: 13px;
+    color:#fff;
+    text-align: center;
+    margin-right: 380px;
+
+   }
+
+   /* pagina 3 portafolio */
+
+  .tituloportafolio{
+    color: #fff;
+    font-size: 20px;
+    
+  }
+  .port1{
+    color: #fff;
+    font-size: var(--fontSize-parrafos);
+  }
+
+ 
+  
+  #portafolio1 .card-porta1{
+   
+    margin-left: 60px;
+    margin-top:50px;
+    padding-top: 80px ;
+    background: linear-gradient(180deg, #1512C1 5.73%, rgba(1, 227, 186, 0.747) 84.90%);
+    border-radius:2px;
+    position: relative;
+    text-align: center;
+    width: 130%;
+    height: 90%;
+    -webkit-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+-moz-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+   
+    }
+   
+    #portafolio1 .card-porta2{
+   
+        margin-left: 300px;
+        margin-top:50px;
+        padding-top: 80px ;
+        background: linear-gradient(180deg, #1512C1 5.73%, rgba(1, 227, 186, 0.747) 84.90%);
+        border-radius:2px;
+        position: relative;
+        text-align: center;
+        width: 130%;
+        height: 90%;
+        -webkit-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+-moz-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+       
+        }
+
+       
+        #portafolio2 .card-porta3{
+   
+            margin-left: 60px;
+            margin-top:50px;
+            padding-top: 80px ;
+            background: linear-gradient(180deg, #1512C1 5.73%, rgba(1, 227, 186, 0.747) 84.90%);
+            border-radius:2px;
+            position: relative;
+            text-align: center;
+            width: 130%;
+            height: 90%;
+            -webkit-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+-moz-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+           
+            }
+
+        
+            #portafolio2 .card-porta4{
+   
+                margin-left: 300px;
+                margin-top:50px;
+               padding-top: 80px ;
+               background: linear-gradient(180deg, #1512C1 5.73%, rgba(1, 227, 186, 0.747) 84.90%);
+               border-radius:10px;
+                position: relative;
+                text-align: center;
+               width: 130%;
+                height: 90%;
+                -webkit-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+-moz-box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+box-shadow: 10px 10px 8px 8px rgba(19,185,191,1);
+                              
+                 }
+
+   .bg-porta{
+        position: relative;
+        left: 310px;
+
+    }  
+ 
+    .bg-porta2{
+        position: relative;
+        left: 320px;  
+        margin-top: 20px;   
+    }  
+
+    .bg-porta2 img{
+        width: 270px;
+    }
+
+
+    #portafolio2{
+        margin-bottom: 125px;
+    }
+    /* barras de progreso */
+    .containerbarras {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        
+      }
+      
+      .containerbarras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Espacio entre las barras */
+      }
+      
+      .progress {
+        width: 1000px;
+      }
+      .progress-bar{
+        width: 100px;
+        height: 100px;
+        
+      }
+
+      .containerbarras{
+        width: 80%;
+    
+      }
+      
+      .progress-bar {
+        height: 30px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+      }
+      
+      .progress-bar-success {
+        background-color: #5cb85c;
+        
+      }
+      
+      .progress-bar-info {
+        background-color: #5bc0de;
+      }
+      
+      .progress-bar-warning {
+        background-color: #f0ad4e;
+      }
+      
+      .progress-bar-danger {
+        background-color: #d9534f;
+      }
+      
+  /* formulario de contacto */
+      
+      .contact-form {
+        margin-left: 800px;
+        background: linear-gradient(180deg, #000568 0%, #5F12C1 100%);
+        border: 1px solid #000568;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .contact-form h2 {
+        margin-top: 0;
+        color:#fff;
+      }
+      
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color:#fff;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #B712C6;
+        border-radius: 3px;
+      }
+      
+      .contact-form button {
+        background: linear-gradient(180deg, #B712C6 0%, rgba(35, 31, 225, 0.00) 52.60%);
+        color:#fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      
+      .contact-form button:hover {
+        background-color: #E90066;
+      }
+
+      .contact-form{
+        position: relative;
+        top: 450px;
+        right: 145px;
+      }
+
+      #contactame{
+        margin-top: -555px;
+      }
+
+      .containerbarras{
+        margin-top: -230px;
+      }
+
+/*       
+logos de contactame */
+
+
+     .logos{
+      position: relative;
+
+        display: block;
+        margin-left: 50px;
+        
+     }
+
+     .logopie img{
+      position: relative;
+      top: 20px;
+     }
+
+/* footer */
+
+     .piedepagina{
+        background-color: #020778;
+     }
+     .logopie{
+        padding-top: 20px;
+        margin-left: 10px;
+        width: 55px;
+        height: 60px;
+     }
+
+     .textopie{
+      position: relative;
+      left: 120px;
+      font-weight: bold;
+      font-size: 1.5rem;
+
+     }
+
+     .logopie1{
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      left: 1250px;
+      top: -50px;
+     }
+
+     .logopie1 img{
+        width: 50px;
+        height: 50px;
+        
+     }
+    
+     .imgcontacto1{
+      margin-top: 10px;
+     }
+     .contacto1{
+        color:#fff;
+        margin-left: 80px;
+
+     }
+     .contacto2{
+      color:#fff;
+ margin-top: 10 px ;
+      margin-left: 95px;
+
+   }
+   .contacto3{
+    color:#fff;
+    top: 10px;
+    margin-left: 95px;
+
+ }
+
+     #particles-js{
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index:-1;
+     }
+  
+    @media screen and (min-width:320px) and (max-width:580px){
+      #hero .cont-info{
+        padding-right: 0;
+      }
+      #hero{
+        text-align: center;
+      }
+      #hero img{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        margin: 50px auto;
+      }
+      #hero .cont-info h3{
+        margin-top: 50px;
+      }
+      #sobremi .card-services{
+        margin-bottom: 40px;
+        height: auto;
+        padding-bottom: 30px;
+      }
+      #conoceme .cono1{
+        margin-left: 5px;
+        margin-top: 40px;
+      }
+      .fotomia{
+        margin-left: 0;
+        left: 0;
+      }
+      #conoceme .foto2{
+        width: 90%;
+        height: auto;
+      }
+      .experienciatext {
+        margin-top: 102px;
+        font-family: 'Crimson Text', serif;
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+        margin-right: 0;
+        font-size: 25px;
+    }
+    .textconoceme{
+      margin-right: 0;
+    }
+
+    #portafolio1 .card-porta1{
+      margin-left: 0;
+      width: 100%;
+    }
+    .bg-porta{
+      left:0;
+      text-align: center;
+    }
+    .bg-porta2{
+      left:0;
+      text-align: center;
+    
+    }
+    #portafolio1 .card-porta2{
+      margin-left: 0;
+      width: 100%;
+    }
+    #portafolio2 .card-porta3{
+      margin-left: 0;
+      width: 100%;
+    }
+    #portafolio2 .card-porta4{
+      margin-left: 0;
+      width: 100%;
+    }
+    #hero .cont-info h1 {
+      margin-top: 33%;
+  }
+  .containerbarras {
+    width: 100%;
+}
+.progress {
+  width: 80%;
+}
+
+.imgcontacto1{
+  margin-top: -100px;
+  margin-left: 100px;
+      width: 100%;
+}
+
+.imgcontacto2{
+  margin-left:100px;
+      width: 100%;
+}
+
+.imgcontacto3{
+
+  margin-left: 100px;
+      width: 100%;
+}
+
+.contacto1 p{
+  color:#fff;
+}
+
+.contact-form {
+  position: relative;
+  top: 830px;
+  margin-left: 40%;
+  width: 360px;
+}
+.piedepagina {
+    margin-top: 150%;
+    width:422px;
+
+}
+ .logopie1{
+  margin-left: 00%;
+
+}
+.logopie2{
+  margin-left: 40%;
+}
+.logopie3{
+  margin-left: 40%; 
+} 
+    }
+
+
+  
